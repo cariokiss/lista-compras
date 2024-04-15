@@ -14,7 +14,7 @@ import { ComprasModule } from './lista/compras/compras.module';
         username: ConfigService.get('DB_USERNAME', 'root'),
         password: ConfigService.get('DB_PASSWORD', '123'),
         database: ConfigService.get('DB_DATABASE', 'lista'),
-        entities: [],
+        entities: [__dirname + '/**/*.entity{.js, .ts}'],
         synchronize: true,
       }),
     }),
